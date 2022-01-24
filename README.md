@@ -1,9 +1,15 @@
 # SimDetect - Detection of Similar Questions in a Question Bank
 
-A question can be phrased in numerous ways, which can lead to lots of repitition/redundancy when stored altogether. This work proposes an unsupervided learning method for detecting questions that may be framed differently, but most certainly elicit the same answer.
+A question can be phrased in numerous ways, which can lead to lots of repitition/redundancy when stored together. This work proposes an unsupervided learning method for detecting questions that may be framed differently, but most certainly elicit the same answer. The project report can be found [here](https://drive.google.com/file/d/1vRiksnDuJFsMYk5eMFX80l2WLM5rHcKX/view?usp=sharing)
 
+Key features of this project:
+- Proposed recurrent-DBSCAN, an extension to the original DBSCAN clustering algorithm (refer to the report for details)
+- Utilised Word2Vec embeddings for question represetation - Employed weighted aggregation of Word2Vec embeddings of individual words in the question, the weight for each word being the it's TFIDF value
+- Additional features include incusion of pre-trained language translation and spell check + correction modules to the pipeline to make the model more robust to data and noise
 
-A subset of the output of the model taken from `Latest.ipynb` (Clusters renamed here). To view all the generated clusters, check `Latest.ipynb`:
+Data is curated from past CBSE class 10 board examination Science (Physics, Chemistry, Biology) and Social Studies (History, Political Science, Georgraphy, Environmental Science) papers. Further, questions from both English and Hindi language test papers were extracted. 
+
+A subset of the output of the model taken from `Latest.ipynb` (Clusters renamed here). To view all the generated clusters, please check `Latest.ipynb`:
 ```
 ___________________________________________CLUSTER  A ______________________________________
 Differentiate between intensive subsistence farming and commercial farming practiced in India.
