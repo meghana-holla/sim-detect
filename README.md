@@ -4,7 +4,7 @@ A question can be phrased in numerous ways, which can lead to lots of repitition
 
 Key features of this project:
 - Proposed recurrent-DBSCAN, an extension to the original DBSCAN clustering algorithm (refer to the report for details)
-- Utilised Word2Vec embeddings for question represetation - Employed weighted aggregation of Word2Vec embeddings of individual words in the question, the weight for each word being the it's TFIDF value
+- Utilised Word2Vec embeddings for question represetation - Employed weighted aggregation of Word2Vec embeddings of individual words in the question, the weight for each word being it's TFIDF value
 - Additional features include addition of pre-trained language translation and spell check + correction modules to the pipeline to make the model more robust to data and noise
 
 Data is curated from past CBSE class 10 board examination Science (Physics, Chemistry, Biology) and Social Studies (History, Political Science, Georgraphy, Environmental Science) papers. Further, questions from both English and Hindi language test papers were extracted. 
